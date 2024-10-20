@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    background-color : rgb(70, 199, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align : center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: white;
+    text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transition : all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.heading:hover{
+    text-shadow: 10px 10px 15px rgba(255, 255, 255, 0.5);
+}
+.board{
+    height : 55vh;
+}
+.grid-container{
+    display : grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,10vw);
+    column-gap : 10px;
+    row-gap : 10px;
+    margin: auto;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.grid-container:hover{
+    column-gap : 2vh;
+    row-gap : 2vh;
+}
+.box{
+    background-color: yellow;
+    height:15vh;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    font-size: 70px;
+    color : rgb(0, 255, 8);
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .grid-container:hover{
+    column-gap : 2vh;
+    row-gap : 2vh;
+}
+
+}
+.box:hover{
+    background-color: rgb(250, 255, 176);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+}
+.reset, .resultDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin : 10px; */
+}
+.reset-btn{
+    font-size: 25px;
+    /* background-color : rgb(244, 217, 10); */
+    /* background-color : black; */
+    background-color: rgba(0, 0, 0, 0.545);
+    color : white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius : 50px;
+    border : 0px solid;
+    padding : 10px;
+    width : 30vw;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.resultDiv{
+    font-size: 25px;
+    /* background-color : rgb(244, 217, 10); */
+    /* background-color : black; */
+    background-color: rgb(20, 162, 20);
+    color : white;
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); */
+    border : 0px solid;
+    padding : 10px;
+    margin : 10px 0px;
+    width : 100%;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.reset-btn:hover{
+    background-color: black;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+}
+.resultDiv:hover{
+    background-color: rgb(40, 96, 0);
+    /* box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5); */
+}
